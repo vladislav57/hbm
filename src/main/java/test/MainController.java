@@ -1,9 +1,6 @@
 package test;
 
-import org.hibernate.Session;
-import org.hibernate.SessionFactory;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.orm.hibernate5.HibernateTransactionManager;
 import org.springframework.stereotype.Controller;
 import org.springframework.transaction.annotation.Transactional;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -16,7 +13,7 @@ import java.util.Date;
 public class MainController {
 
     @Autowired
-    private  EventSerive eventSerive;
+    private EventSerive eventSerive;
 
     @RequestMapping
     @Transactional
